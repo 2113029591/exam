@@ -3,6 +3,7 @@
     width: 500px;
     height: 500px;
 }
-.page1{
+.container{
+    position: fixed;
     
 }
