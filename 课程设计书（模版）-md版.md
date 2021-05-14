@@ -74,6 +74,18 @@ user_pwd|string|12|用户密码|否
 | user_id         |   int    |  11  | 评论的用户id |       否 |
 | comment_content |  string  | 100  |   评论内容   |       否 |
 
+> 表4 人物信息（persons）
+
+| 字段名称     | 数据类型 | 长度 | 字段含义 | 是否主键 |
+| ------------ | :------: | :--: | :------: | -------: |
+| person_id    |   int    |  11  |    id    |       是 |
+| person_name  |   int    |  11  | 人物名称 |       否 |
+| person_story |  string  | 100  | 人物故事 |       否 |
+
+
+
+
+
 
 
 ### 3.5 接口设计
@@ -88,8 +100,8 @@ user_pwd|string|12|用户密码|否
 ---
 参数名称|数据类型|含义|是否必需
 --|:--:|:--:|--:
-userName|String|用户名|是
-userPwd|string|用户密码|是
+user_name|String|用户名|是
+user_pwd|string|用户密码|是
 ---
 * 数据返回成功结果：如下所示
 ```
@@ -113,7 +125,55 @@ userPwd|string|用户密码|是
     }
 ]
 ```
-#
+> 2:获得评论的信息
+
+- 接口描述：获得所有的评论信息
+- 请求方式：post
+- 请求地址：http://localhost/exam/src/server/getComments.php
+- 参数设置：无
+
+> 3:添加评论
+
+- 接口描述：用户可以添加评论
+- 请求方式：post
+- 请求地址：http://localhost/exam/src/server/addComment.php
+- 参数设置：如下所示
+
+---
+
+| 参数名称     | 数据类型 |    含义    | 是否必需 |
+| ------------ | :------: | :--------: | -------: |
+| user_name    |  String  |   用户名   |       是 |
+| user_comment |  string  | 用户的评论 |       是 |
+
+> 4.删除评论
+
+
+
+
+
+> 5.获得自己的评论
+
+
+
+
+
+> 6:用户注册
+
+- 接口描述：用户可以添加评论
+- 请求方式：post
+- 请求地址：http://localhost/exam/src/server/addComment.php
+- 参数设置：如下所示
+
+> 7：获得新闻信息
+
+
+
+> 8:获得人物信息
+
+
+
+
 
 ## 4 软件说明
 
