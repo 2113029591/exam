@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: red;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item{
+    height: 70px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-link{
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.homeImage{
+    height: 300px;
+}
+.homeImage img{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+.login{
+    position: absolute;
+    left: 80vw;
+    top:250px;
+    font-size: 20px;
+}
