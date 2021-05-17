@@ -92,3 +92,36 @@
 .indicator.active {
     background: red;
 }
+
+.new{
+    margin-top: 400px;
+    background-color: skyblue;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+
+}
+.new-image{
+    background-image:url("../images/1.png");
+    width: 300px;
+    height: 300px;
+    margin:10px;
+}
+
+.ind-news-box{
+    position:relative;
+    left: 0;
+    top:200px;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+}
+.ind-news-box:hover{
+    background: rgba(255,255,255,0.5);
+}
+
+.spirit-box{
+    background:rgba(255,0,0,0.5);
+    height: 500px;
+}
